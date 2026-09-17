@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: myapp
+  tag: v1
+  pullPolicy: IfNotPresent
+
+ingress:
+  enabled: true
+  className: nginx
+  host: myapp.local
+  path: /
